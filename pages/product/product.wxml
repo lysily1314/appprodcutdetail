@@ -1,0 +1,10 @@
+<view class='container'>
+<swiper class='swiper-tool' indicator-dots="true"
+   interval="3000" duration="500">
+  <block wx:for="{{summary}}" wx:key="i">
+    <swiper-item>
+      <image class="tool-image" wx:if='{{item.img_url}}' mode='widthFix' src='{{item.img_url}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

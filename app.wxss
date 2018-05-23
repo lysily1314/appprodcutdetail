@@ -1,0 +1,70 @@
+page{
+  font-size: 26rpx;
+}
+page,view,text,image,button,label,input,checkbox,radio,navigator{
+  box-sizing: border-box;
+}
+page button{
+  -webkit-appearance: none; font-size: 26rpx;
+  appearance: none;
+  border: 0; outline: 0 none;padding: 0;margin: 0;
+  border-radius: 0;
+  background: none;
+}
+
+button:after {display: none;}
+
+scroll-view{overflow:hidden;white-space:nowrap;}
+
+.ads-row{display: table; width: 100%; clear: both;}
+image{ display: block; width: 100%;}
+.p,.h1,.h2,.h3,.h4,.h5,.h6{width: 100%; font-size: 24rpx; display: table; line-height: 32rpx;}
+.span{ display: inline-block;}
+.relative{position: relative}
+.absolute{position: absolute}
+
+
+.space{ height: 16rpx;}
+.background-white{ background: #fff;}
+
+.fr{ float: right;}
+.fl{ float: left;}
+
+.table{ display: table; width: 100%; height: 100%;}
+.td{ height: 100%; width: 100%; display: table-cell; vertical-align: middle;}
+
+.ads-c-0,.ads-c-1,.ads-c-2,.ads-c-3,.ads-c-4,.ads-c-5,.ads-c-6,.ads-c-7,.ads-c-8,.ads-c-9,.ads-c-10,.ads-c-11,.ads-c-12,.ads-mg-7,.ads-mg-5{  display: table-cell;}
+.ads-c-0,.td-0{ width: 0;}
+.ads-c-1,.td-1{width: 8.33333333%}
+.ads-c-2,.td-2{width: 16.66666667%}
+.ads-c-3,.td-3{width: 25%}
+.ads-c-4,.td-4{width: 33.33333333%}
+.ads-c-5,.td-5{width: 41.66666667%}
+.ads-c-6,.td-6{ width: 50%}
+.ads-c-7,.td-7{width: 58.33333333%}
+.ads-c-8,.td-8{width: 66.66666667%}
+.ads-c-9,.td-9{ width: 75%}
+.ads-c-10,.td-10{width: 83.33333333%}
+.ads-c-11,.td-11{width: 91.66666667%}
+.ads-c-12,.td-12{ width: 100%;}
+.ads-mg-7,.td-7{ width: 14.28571428%}
+.ads-mg-5{ width: 20%;}
+
+.borderTop{border-top: 1rpx solid #eee;}
+.borderBottom{border-bottom: 1rpx solid #eee;}
+.red{ color: red;}
+.green{ color: #6fc51c;}
+.dark-green{ color: #00c17b;}
+.blue{ color: #11ade0;}
+
+.inline-block{ display: inline-block;}
+
+.h1,.h2,.h3,.h4,.h5,.h6{ font-weight: bold; display: block; width: 100%;}
+.p{ width: 100%; display: block;}
+
+/**app.wxss**/
+.container {
+  display: block; width: 100%;
+  position: relative;z-index: 5;
+  height: 100%;
+} 

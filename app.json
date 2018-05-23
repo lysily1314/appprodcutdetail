@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index"
+    ,"pages/category/category"
+    ,"pages/product/product"
+    ,"pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Verena产品",
+    "navigationBarTextStyle": "white",
+    "backgroundColor":"#eeeeee"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/index-default-icon.png",
+        "selectedIconPath": "pages/images/index-selected-icon.png"
+      }
+      ,{
+        "pagePath": "pages/category/category",
+        "text": "产品",
+        "iconPath": "pages/images/category-default-icon.png",
+        "selectedIconPath": "pages/images/category-selected-icon.png"
+      }
+      ,
+      {
+        "pagePath": "pages/product/product",
+        "text": "品牌",
+        "iconPath": "pages/images/product-default-icon.png",
+        "selectedIconPath": "pages/images/product-selected-icon.png"
+      }
+    ]
+  }
+}

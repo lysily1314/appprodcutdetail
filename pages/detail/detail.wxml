@@ -1,0 +1,31 @@
+<view class='container'>
+
+  <view class='ads-row detail'>
+      <view class='in-banner'>
+        <image mode='widthFix' class='icons' src='/images/icon-3.png'></image>
+        <image mode='widthFix' wx:if="{{pdata.big_image}}" src='{{pdata.big_image}}'></image>
+      </view>
+
+      <view  wx:if="{{pdata.product_type == 1}}" class='product-text ads-row'>
+          <image class='icon' src='/images/icon-1.png'></image>
+          <view class='title ads-row'>{{pdata.title}}</view>
+          <view class='price ads-row'>建议零售价：<text>￥{{pdata.sug_price}}</text></view>
+          <view class='text ads-row'>{{pdata.summary}}</view>
+      </view>
+
+      <view wx:else class='product-text ads-row' style="padding: 30rpx 30rpx 30rpx 20rpx;">
+          <view class='title ads-row'>{{pdata.title}}</view>
+          <view class='price ads-row'>建议零售价：<text>￥{{pdata.sug_price}}</text></view>
+          <view class='text ads-row'>{{pdata.summary}}</view>
+      </view>
+
+      <view wx:if="{{pdata.content}}" class='rich-content ads-row'>
+          <view class='h3'>产品详情：</view>
+          <view class='ads-row box'>
+            <rich-text nodes="{{pdata.content}}"></rich-text>
+          </view>
+      </view>
+
+  </view>
+
+</view>

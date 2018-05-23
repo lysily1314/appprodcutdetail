@@ -1,0 +1,23 @@
+<view class="load-page" hidden='{{!isLoading}}'>
+  <loading hidden='{{!isLoading}}'>加载中..</loading>
+</view>
+<swiper class='banner' indicator-dots="true"
+  autoplay="true" interval="3000" duration="500">
+  <block wx:for="{{banner}}" wx:key="i">
+    <swiper-item>
+      <image wx:if='{{item.img_url}}' mode='widthFix' src='{{item.img_url}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='ads-row model-title'>
+  <text>产品手册目录</text>
+</view>
+<view class='ads-list catge-list'>
+  <block wx:if="{{category}}" wx:for="{{category}}" wx:key="i">
+  <view data-id='{{item.id}}' catchtap='goCategory' class='item ads-c-4' hover-class='none'>
+    <image wx:if='{{item.img_url}}'
+    src='{{item.img_url}}'
+     class='pic'></image>
+  </view>
+  </block>
+</view>

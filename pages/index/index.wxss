@@ -1,0 +1,33 @@
+.banner{
+  width: 100%; height: 460rpx; display: block;
+}
+
+.model-title{
+  color: #666; 
+  padding: 15rpx 20rpx;
+}
+.model-title text{
+  display: inline-block;font-size: 30rpx;
+  border-left: 4rpx solid #2395ff;
+  padding: 0 15rpx; line-height: 42rpx;
+}
+page{
+  background-color: #eeeeee
+}
+.catge-list{ 
+  padding-bottom: 20rpx;
+}
+.catge-list .item{
+   float: left; display: block; margin-top: 15rpx;
+} 
+.catge-list .item .pic{
+  width: 185rpx; height: 181rpx; margin: 0 auto;
+} 
+
+.load-page{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: whitesmoke;
+  z-index: 99999999;
+}

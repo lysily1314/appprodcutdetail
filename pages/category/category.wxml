@@ -1,0 +1,32 @@
+<scroll-view class='c-list' scroll-y="true">
+    <view class='ads-row item h3'><text>产品分类</text></view>
+    <block wx:if="{{category}}" wx:for="{{category}}" wx:key='i'>
+      <view wx:if="{{item.active == true}}" class='ads-row item active'><text>{{item.title}}</text></view>
+      <view wx:else class='ads-row item' data-id='{{item.id}}' catchtap='selectCategory'><text>{{item.title}}</text></view>
+    </block>
+</scroll-view>
+<scroll-view class='frame' scroll-y="true">
+    <block wx:if="{{dataList}}" wx:for="{{dataList}}" wx:key="{{i}}">
+    <view class='ads-row item-adv'>
+      <image src='{{item.c_img_url}}'></image>
+    </view>
+    <block wx:for="{{item.items}}" wx:key="j" wx:for-item="vo" wx:for-index="idx">
+    <!--<view class='h4'>{{vo.product_type}}</view>-->
+    <view class='list-mv ads-row'>
+      <navigator  url="/pages/detail/detail?id={{vo.id}}" class='ads-row item-product'>
+        <view class='pic'>
+            <view class="ads-row photo">
+                <image wx:if="{{vo.product_type == 1}}" class="min-icon" src="/images/icon-2.png"></image>
+                <image mode='widthFix' src='{{vo.small_image}}'></image>
+            </view>
+        </view>
+        <view class='ads-row info'>
+          <text class='p title'>{{vo.title}}</text>
+          <text class='p price'>建议零售价：<text>￥{{vo.sug_price}}</text></text>
+          <text class='p text'>{{vo.summary}}</text>
+        </view>
+      </navigator>
+    </view>
+    </block>
+    </block>
+</scroll-view>

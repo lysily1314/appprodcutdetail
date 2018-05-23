@@ -1,0 +1,98 @@
+
+.c-list{
+  width: 214rpx; top: 0;
+  left: 0; position: fixed; z-index: 99;
+  bottom: 0; height: 100%;
+  background: #fff;
+  display: block; overflow: hidden;
+  background: #f4f4f4;
+}
+.c-list .item{
+  padding: 28rpx 0;
+}
+.c-list .item text{
+  display: inline-block; font-size: 25rpx;
+  line-height: 40rpx; padding-left: 15rpx;
+  border-left: 4rpx solid transparent;
+}
+.c-list .item.active text{
+   border-left: 4rpx solid #2395ff;
+   color: #fff;
+}
+
+.c-list .item.active{
+    background-color: #2395ff; 
+}
+
+.c-list .scroll-view{ height: 100%;}
+
+.frame{
+  width: 536rpx; top: 0;
+  right: 0; position: fixed; z-index: 99;
+  bottom: 0; height: auto;
+  background: #fff;
+  padding: 20rpx 0 20rpx 0;
+  display: block; overflow: hidden;
+}
+.item-adv{
+  width: 500rpx; margin: 0 auto;
+}
+.item-adv image{ height: 305rpx;}
+
+.h4{
+  line-height: 36rpx; font-size: 30rpx; margin-top: 20rpx;
+  font-weight: normal; padding-left: 20rpx;
+}
+.list-mv{
+ width: 500rpx; margin: 0 auto;
+}
+.list-mv .item-product{
+  
+}
+.item-product{
+  position: relative;
+  width: 500rpx;display: block; overflow: hidden;
+  min-height: 208rpx;
+  padding: 18rpx 0 0 166rpx;
+}
+.item-product .pic{
+  width: 116rpx; height: 178rpx; overflow: hidden;
+  position: absolute;
+  left: 25rpx;top: 25rpx;
+}
+.item-product .pic .photo{
+  width: 116rpx; height: 178rpx; overflow: hidden; display: block;
+  position: relative;
+}
+.item-product .pic .photo .min-icon{
+  position: absolute; width: 42rpx; height: 43rpx;
+  top: 0;right: 0;
+}
+.item-product .pic .photo .min-icon image{ width: 42rpx; height: 43rpx;}
+
+.item-product .info{
+  width: 100%; display: block;
+}
+.item-product .info .title{
+  line-height: 32rpx; font-size: 24rpx;
+  height: 64rpx;
+   white-space: pre-wrap;
+}
+
+.item-product .info .price{
+  font-size: 20rpx; color: #666;
+  margin-top: 5rpx;
+}
+.item-product .info .price text{
+  color: #e70000;
+}
+
+.item-product .info .text{
+  margin-top: 5rpx;
+  white-space: pre-wrap;font-size: 20rpx;
+  line-height: 26rpx; height: 26rpx; color: #666;
+}
+
+.blod{
+  font-weight: bold;
+}
