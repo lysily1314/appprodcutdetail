@@ -3,7 +3,7 @@
  */
 var config = {
   //接口主机
-    host: 'https://xcx.socialjia.com/projects/index.php?'
+    host: 'https://hostname.com/projects/index.php?'
   //用户登录接口
   , login_url:'c=Verena&m=login'
   
