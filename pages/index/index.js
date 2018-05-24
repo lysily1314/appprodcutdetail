@@ -19,6 +19,9 @@ Page({
   onLoad: function (options) {
     var _this = this;
     if (app.globalData.categoryList){
+        wx.showTabBar({
+          aniamtion:true
+        })
         _this.setData({
           category: app.globalData.categoryList,
           summary: app.globalData.summaryList,
@@ -30,6 +33,9 @@ Page({
         app.globalData.categoryList = res.data.category
         app.globalData.summaryList = res.data.summary
         app.globalData.bannerList = res.data.banner
+        wx.showTabBar({
+          aniamtion: true
+        })
         _this.setData({
           category: res.data.category,
           summary: res.data.summary,

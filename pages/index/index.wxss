@@ -31,3 +31,7 @@ page{
   background-color: whitesmoke;
   z-index: 99999999;
 }
+.load-page image{
+  width: 100%;
+  height: 100%;
+}

@@ -19,6 +19,7 @@ App({
       }
     })
     _this.globalData.trSession = threeSessionId;
+    wx.hideTabBar({});
     _this.loadInit();
   }
 

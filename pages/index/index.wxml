@@ -1,5 +1,5 @@
 <view class="load-page" hidden='{{!isLoading}}'>
-  <loading hidden='{{!isLoading}}'>加载中..</loading>
+    <image src='/images/loading.jpg'></image>
 </view>
 <swiper class='banner' indicator-dots="true"
   autoplay="true" interval="3000" duration="500">
