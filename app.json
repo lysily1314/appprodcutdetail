@@ -7,15 +7,15 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#2c9d67",
     "navigationBarTitleText": "Verena产品",
     "navigationBarTextStyle": "white",
-    "backgroundColor":"#eeeeee"
+    "backgroundColor":"#2c9d67"
   },
   "tabBar": {
-    "color": "#999",
+    "color": "#aaa",
     "selectedColor": "#ffffff",
-    "backgroundColor": "#000000",
+    "backgroundColor": "#2c9d67",
     "list": [
       {
         "pagePath": "pages/index/index",

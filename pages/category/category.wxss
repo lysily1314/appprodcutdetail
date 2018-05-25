@@ -16,12 +16,12 @@
   border-left: 4rpx solid transparent;
 }
 .c-list .item.active text{
-   border-left: 4rpx solid #2395ff;
+   border-left: 4rpx solid #2c9d67;
    color: #fff;
 }
 
 .c-list .item.active{
-    background-color: #2395ff; 
+    background-color: #2c9d67; 
 }
 
 .c-list .scroll-view{ height: 100%;}
